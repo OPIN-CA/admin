@@ -1,0 +1,21 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/admin.css: {}
+
+
+#LIBRARIES
+
+colorbox:
+  version: version
+  css:
+    js/libs/colorbox/example1/colorbox.css: {}
+  js:
+    js/libs/colorbox/jquery.colorbox-min.js: {}
+    js/add.js: {}
+  dependencies:
+    - core/jquery
+
+
+
