@@ -1,3 +1,3 @@
 # Fitzroy
 
-This is an admin custom theme based off Adminimal theme for Drupal 8.
+Custom admin theme for Drupal 8 based on Adminimal.
