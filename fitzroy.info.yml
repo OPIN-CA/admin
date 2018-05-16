@@ -1,13 +1,13 @@
-name: Admin
+name: Fitzroy
 type: theme
-description: 'Custom administration theme based of Adminimal.'
+description: 'Custom administration theme based of Adminimal theme.'
 core: 8.x
 base theme: adminimal_theme
 screenshot: /images/screenshot.svg
 
 libraries:
-  - admin/global-styling
-  - admin/colorbox
+  - fitzroy/global-styling
+
 
 stylesheets-remove:
   - 'core/themes/stable/css/system/components/system-status-report-counters.css'
@@ -28,4 +28,3 @@ regions:
   sidebar_first: 'First sidebar'
 regions_hidden:
   - sidebar_first
-
