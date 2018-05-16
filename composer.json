@@ -1,0 +1,13 @@
+{
+    "name": "opin/fitzroy",
+    "description": "Custom administration theme based on Adminimal",
+    "type": "theme",
+    "authors": [
+        {
+            "name": "Adrian Rylski",
+            "email": "adrian.rylski@opin.ca"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
