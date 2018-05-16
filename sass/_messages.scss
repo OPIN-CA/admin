@@ -1,0 +1,240 @@
+// @file
+// Styles for messages.
+
+.adminimal .messages {
+  margin-bottom: vr(1);
+  background-color: #ecf6fa;
+  // border: 1px solid #bcdeee;
+  color: #424242;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  word-wrap: break-word;
+  // font-family: $system-font-family !important;
+
+
+  background-repeat: no-repeat;
+  background-size: 55px 55px;
+  background-position: 101.2%  -5px;
+
+
+  a {
+    color: #bcdeee;
+    font-weight: 600;
+    text-decoration: none;
+    // font-family: $system-font-family !important;
+  }
+
+}
+
+.adminimal .messages__content {
+  font-size: 1rem;
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.adminimal .messages--error {
+  background-color: #ffe6e5;
+  border-color: #ffc5c2;
+  background-image: url('../images/bg/messages-error.svg');
+
+  &::before {
+    // background-image: url('../images/bg/messages-error.svg');
+  }
+
+  a {
+    color: #ff645c;
+  }
+
+  .messages__item {
+    em:first-child {
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+}
+
+.adminimal .messages--status {
+  background-color: #eff8e6;
+  border-color: #c9e8a9;
+  background-image: url('../images/bg/messages-status.svg');
+
+  &::before {
+    // @include svg-background(messages-status);
+    // background-image: url('../images/bg/messages-status.svg');
+    // background-image: url('../images/bg/messages-status.png');
+
+  }
+
+  a {
+    color: #71b02f;
+    // font-family: $system-font-family !important;
+  }
+}
+
+.adminimal .messages--warning {
+  background-color: #fcf8e3;
+  border-color: #faf2cc;
+  background-image: url('../images/bg/messages-warning.svg');
+
+  &::before {
+    // @include svg-background(messages-warning);
+    // background-image: url('../images/bg/messages-status.png');
+  }
+
+  a {
+    color: #8a6d3b;
+    // font-family: $system-font-family !important;
+  }
+}
+
+.system-status-counter{
+  display: block;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #f5f5f2;
+  background-repeat: no-repeat;
+  background-size: 55px 55px;
+  background-position: 101.5%  -8px;
+  
+}
+
+.system-status-counter--error{
+  background-color: #ffe6e5;
+  border-color: #ffc5c2;
+  background-image: url('../images/bg/messages-error.svg');
+}
+
+.system-status-counter--checked{
+  background-color: #eff8e6;
+  border-color: #c9e8a9;
+  background-image: url('../images/bg/messages-status.svg');
+}
+
+.system-status-counter--warning{
+  background-color: #fcf8e3;
+  border-color: #faf2cc;
+  background-image: url('../images/bg/messages-warning.svg');
+
+}
+
+.system-status-report-counters__item{
+  
+}
+
+.system-status-counter__status-title{
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+.system-status-counter__details{
+  display: block;
+}
+
+.system-status-counter__status-icon{
+  display: none;
+}
+
+//GENERAL SYSTEM INFORMATION
+.system-status-general-info {
+  @extend %cf;
+  border: 0 !important;
+  background-color:#f5f5f5;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+
+  .system-status-general-info__header{
+    padding-left: .5rem;
+    padding-top: .5rem;
+    padding-bottom: 0;
+
+  }
+
+  .system-status-general-info__items{
+    padding: 0 .5rem .5rem .5rem !important;
+    display: block;
+    @extend %cf;
+
+    .system-status-general-info__item{
+      margin: .5rem;
+      border: 0 !important;
+      border-radius: 4px;
+      min-height: 100px;
+      background-color: #fcfcfc;
+      @extend %cf;
+      padding-top: .5rem;
+
+      @include span(12 of 12);
+
+      @include mappy-bp(568px){
+        @include gallery (6 of 12);
+      }
+
+      @include mappy-bp(960px){
+        @include gallery (4 of 12);
+      }
+    }
+  }
+}
+
+//Errors found
+.system-status-report__requirements-group {
+
+  h3{
+    margin-top: 1.6rem;
+    margin-bottom: .5rem !important;
+  }
+
+
+  summary::-webkit-details-marker { 
+    font-size:0px 
+  }
+
+  .description{
+    max-width: 840px;
+  }
+
+  .system-status-report__entry--error{
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+  }
+
+  .system-status-report__entry--warning{
+    background-color: #ffe6e5;
+    border-color: #ffc5c2;
+  }
+
+  .system-status-report__entry--checked{
+    background-color: #eff8e6;
+  border-color: #c9e8a9;
+  }
+
+
+  details{
+    margin-bottom: .5rem;
+    border: 0;
+    border-radius: 4px;
+    @extend %cf;
+
+    summary{
+      @include span(first 3 of 12);
+      padding-left: .5rem;
+      font-weight: 500;
+
+      &:before{
+        background-image: none;
+        height: 0;
+        width: 0;
+        display: none;
+      }
+    }
+
+    .system-status-report__entry__value{
+      @include span(last 9 of 12);
+      
+    }
+  }
+
+}

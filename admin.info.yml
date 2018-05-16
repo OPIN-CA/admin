@@ -9,6 +9,13 @@ libraries:
   - admin/global-styling
   - admin/colorbox
 
+stylesheets-remove:
+  - 'core/themes/stable/css/system/components/system-status-report-counters.css'
+  - 'core/themes/seven/css/components/system-status-report.css'
+  - 'core/themes/seven/css/components/system-status-counter.css'
+  - 'core/themes/classy/css/components/messages.css'
+  - 'core/themes/seven/css/components/system-status-report-general-info.css'
+
 regions:
   header: 'Header'
   pre_content: 'Pre-content'

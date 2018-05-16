@@ -1,0 +1,5 @@
+options:
+  formatter: stylish
+rules:
+  # Extends
+  no-misspelled-properties: 1
