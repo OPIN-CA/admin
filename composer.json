@@ -1,7 +1,7 @@
 {
     "name": "opin/fitzroy",
     "description": "Custom administration theme based on Adminimal",
-    "type": "theme",
+    "type": "drupal-custom-theme",
     "authors": [
         {
             "name": "Adrian Rylski",
@@ -9,5 +9,15 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "composer/installers": "^1.2"
+    },
+    "extra": {
+        "installer-paths": {
+            "docroot/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "enable-patching": true
+    }
 }
