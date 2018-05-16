@@ -4,9 +4,9 @@ dependencies:
   module:
     - user
   theme:
-    - adminimal_theme
-id: adminimal_theme_login
-theme: adminimal_theme
+    - fitzroy
+id: fitzroy_login
+theme: fitzroy
 region: content
 weight: 10
 provider: null
